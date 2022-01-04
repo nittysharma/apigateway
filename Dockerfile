@@ -6,5 +6,5 @@ USER spring:spring
 ARG JAR_FILE=target/*.jar
 COPY ${JAR_FILE} app.jar
 COPY src/main/resources/application.properties .
-EXPOSE 2020
+EXPOSE 8761
 ENTRYPOINT ["java","-jar","/app.jar"]
